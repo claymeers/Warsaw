@@ -39,7 +39,7 @@ let scrollPercentage = () => {
     let pos = document.documentElement.scrollTop;
     let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100) / calcHeight);
-    scrollProgress.style.background = `conic-gradient(#e2d30c ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
     progressValue.textContent = `${scrollValue}%`;
 };
 
